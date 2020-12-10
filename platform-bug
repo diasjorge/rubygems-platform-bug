@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -ex
+
+cd /src
+gem install bundler -v 2.1.4
+bundle install --deployment
+bundle --version
+bundle list
+gem update bundler
+bundle --version
+bundle list
