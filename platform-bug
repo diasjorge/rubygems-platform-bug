@@ -12,6 +12,7 @@ bundle list
 gem update bundler
 if [[ -n "$RUBYGEMS_UPDATE" ]]; then
   gem update --system
+  gem --version
 fi
 bundle --version
 bundle list
