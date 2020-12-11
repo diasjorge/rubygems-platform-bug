@@ -2,6 +2,8 @@
 
 set -ex
 
+ruby --version
+gem --version
 cd /src
 gem install bundler -v 2.1.4
 bundle install --deployment
