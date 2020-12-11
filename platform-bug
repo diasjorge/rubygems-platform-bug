@@ -10,5 +10,8 @@ bundle install --deployment
 bundle --version
 bundle list
 gem update bundler
+if [[ -n "$RUBYGEMS_UPDATE" ]]; then
+  gem update --system
+fi
 bundle --version
 bundle list

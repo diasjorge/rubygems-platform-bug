@@ -5,7 +5,13 @@ To reproduce you can execute:
 ```
 docker run --rm -it -v $PWD:/src ruby:2.5 /src/platform-bug
 
+# Update rubygems
+docker run --rm -it -v $PWD:/src  -e RUBYGEMS_UPDATE=1 ruby:2.5/src/platform-bug
+
 docker run --rm -it -v $PWD:/src ruby:2.6 /src/platform-bug
+
+# Update rubygems
+docker run --rm -it -v $PWD:/src  -e RUBYGEMS_UPDATE=1 ruby:2.6/src/platform-bug
 
 docker run --rm -it -v $PWD:/src ruby:2.7 /src/platform-bug
 ```
